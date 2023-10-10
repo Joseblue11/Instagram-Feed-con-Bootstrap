@@ -1,0 +1,398 @@
+body {
+	background-color:rgba(222, 222, 222, 0.838);
+	width: auto;
+	height: 600px;
+}
+
+.row{
+	align-items: center;
+}
+
+.row-header{
+	width: 100vw;
+	display: flex;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.row-modal{
+	flex-direction: column;
+}
+
+.row-modal-buttons{
+	justify-content: flex-start;
+}
+
+textarea{
+	width: 100%;
+    height: 100px;
+	padding: 5%;
+}
+
+header {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.ig-string{
+	width: 6vw;
+}
+
+header h1 {
+	width: 450px;
+	margin: 0px;
+	margin: auto;
+	padding: 15px;
+}
+.ig1 {
+	display: flex;
+	padding: auto;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: auto;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 520vh;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.Sistemas{
+	background-color: white;
+}
+.titulo1 {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+.rigo {
+	display: flex;
+	border: auto;
+	padding: auto;
+	margin: auto;
+}
+
+.parrafo {
+	font-size: 12px;
+}
+
+.t1 {
+	font-size: 1rem;
+}
+
+.p1 {
+	font-size: 0, 8rem;
+	color: gray;
+}
+
+.imagen1 {
+	width: 450px;
+	height: 360px;
+	border: 1px;
+	padding: 2px;
+	margin: auto;
+}
+
+.img1 {
+	width: 445px;
+	height: 330px;
+	border: 1px;
+	padding: auto;
+	justify-content: center;
+	margin: 1px;
+}
+
+.icons1 {
+	width: 450px;
+	height: 35px;
+	display: flex;
+}
+
+.rightsite {
+	display: flex;
+	justify-content: right;
+	margin-left: 10px;
+	margin-right: 300px;
+}
+
+.leftsite {
+	display: flex;
+	justify-content: left;
+}
+
+.text1 {
+	height: 80px;
+	padding: 1px;
+	border: 1px;
+	margin: 1px;
+	justify-content: center;
+}
+.Mecatronica{
+	background-color: white;
+}
+.titulo2 {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+.rigo2 {
+	display: flex;
+	border: auto;
+	padding: auto;
+	margin: auto;
+}
+
+.parrafo2 {
+	font-size: 12px;
+}
+
+.t2 {
+	font-size: 1.2rem;
+	padding: auto;
+	margin-right: 70px;
+	border: auto;
+	font-weight: bold;
+}
+
+.p2 {
+	font-size: 0, 8rem;
+	color: gray;
+}
+
+.imagen2 {
+	width: 450px;
+	height: 360px;
+	border: 1px;
+	padding: 2px;
+	margin: auto;
+}
+
+.img2 {
+	width: 445px;
+	height: 330px;
+	border: 1px;
+	padding: auto;
+	justify-content: center;
+	margin: 1px;
+}
+
+.icons2 {
+	width: 450px;
+	height: 35px;
+	display: flex;
+}
+
+.rightsite2 {
+	display: flex;
+	justify-content: right;
+	margin-left: 10px;
+	margin-right: 300px;
+}
+
+.leftsite2 {
+	display: flex;
+	justify-content: left;
+}
+
+.text2 {
+	height: 80px;
+	padding: 1px;
+	border: 1px;
+	margin: 1px;
+	justify-content: center;
+}
+
+.Aeronautica{ 
+	background-color: white;
+}
+.titulo3 {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+.rigo3 {
+	display: flex;
+	border: auto;
+	padding: auto;
+	margin: auto;
+}
+
+.parrafo3 {
+	font-size: 12px;
+}
+
+.t3 {
+	font-size: 1.2rem;
+	padding: auto;
+	margin-right: 70px;
+	border: auto;
+	font-weight: bold;
+}
+
+.p3 {
+	font-size: 0, 8rem;
+	color: gray;
+}
+
+.imagen3 {
+	width: 450px;
+	height: 360px;
+	border: 1px;
+	padding: 2px;
+	margin: auto;
+}
+
+.img3 {
+	width: 445px;
+	height: 330px;
+	border: 1px;
+	padding: auto;
+	justify-content: center;
+	margin: 1px;
+}
+
+.icons3 {
+	width: 450px;
+	height: 35px;
+	display: flex;
+}
+
+.rightsite3 {
+	display: flex;
+	justify-content: right;
+	margin-left: 10px;
+	margin-right: 300px;
+}
+
+.leftsite3 {
+	display: flex;
+	justify-content: left;
+}
+
+.text3 {
+	height: 80px;
+	padding: 1px;
+	border: 1px;
+	margin: 1px;
+	justify-content: center;
+}
+
+.navbar{
+	width: 100vw;
+}
+
+.dropdown{
+	width: 5vw;
+}
+
+.row-child{
+	width: 50vw;
+}
+
+.tabs{
+	display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.card{
+	width: 50vw;
+}
+
+.container{
+	justify-content: flex-end;
+}
+
+.column-card{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 75%;
+}
+
+.row-card{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.row-card-header{
+	display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-image{
+	height: 75vh;
+}
+
+.favorite{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.card-text{
+	padding: 10px;
+}
+
+p{
+	margin: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.img-profile-view{
+	width: 450px;
+    height: 450px;
+}
+
+.img-profile-view>img{
+	width: 100%;
+	height: 100%;
+}
+
+/* .container-fluid{
+	width: 100vw;
+} */
+
+.row-profile{
+	width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.col-img{
+	padding: 10px;
+}
+
+.settings{
+	display: flex;
+    justify-content: flex-end;
+}

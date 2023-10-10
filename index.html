@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Instagram Feed con Bootstrap</title>
+		<meta name="author" lang="es" content="Jose Tovar" />
+		<meta name="keywords" content="Instagram Feed con Bootstrap" />
+		<meta name="Description" content="Proyecto 2 Full Stack"/>
+		<link rel="shorcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png"/>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">		
+	</head>
+	<body>
+		<main>
+			<header>
+				<nav class="navbar bg-body-tertiary">
+					<div class="container">
+						<div class="row-header row">
+							<div class="col-6" style="width: 21%;">
+								<a class="navbar-brand" href="">
+									<i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i> 
+								<img class="ig-string" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Logo" class="d-inline-block align-text-top">
+								</a>
+						</div>
+
+						<div class="col-6">
+							<div class="row row-child">
+								<div class="col-3">
+									<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#create-modal">Create a post</button>
+
+									<!-- Button trigger modal -->
+  
+									<!-- Modal -->
+									<div class="modal fade" id="create-modal" tabindex="-1" aria-hidden="true">
+										<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="create-modal">Create a post</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="container">
+													<div class="row row-modal">
+														<div class="col">
+															<form action="" method="post" enctype="multipart/form-data">
+																<p class="text-start">Caption:</p>
+																	<textarea placeholder="Add the caption of your post here" aria-label="With textarea"></textarea>
+															</form>
+														</div>
+														<div class="col">
+															<div class="row row-modal-buttons">
+																<div class="col-3">
+																	<button type="button" class="btn btn-light">
+																		<i class="fa-solid fa-camera"></i>
+																	</button>
+																</div>
+																<div class="col-3">
+																	<button type="button" class="btn btn-light">
+																		<i class="fa-solid fa-location-pin"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-success">Publish</button>
+											</div>
+										</div>
+										</div>
+									</div>
+
+								</div>
+								
+								<div class="col-3">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+											<i class="fa-solid fa-gear"></i>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+										<li><a class="dropdown-item" href="#">Profile</a></li>
+										<li><a class="dropdown-item" href="#">Accesibility</a></li>
+										<li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						</div>
+				</nav>
+			</header>
+			<br />
+			<section>
+
+				<div class="tabs">
+
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+						  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+							<i class="fa-solid fa-square"></i>
+						</button>
+						</li>
+						<li class="nav-item" role="presentation">
+						  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+							<i class="fa-solid fa-border-all"></i>
+						  </button>
+						</li>
+					  </ul>
+				</div>
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<article>
+
+							<div class="card">
+								<div class="card-header">
+										<div class="row row-card-header">
+											<div class="col-4">
+												<div class="row row-card">
+													<div class="col column-card">
+														<i class="fa-solid fa-code fa-2xl" style="color: #000000;"></i>
+														<p>It's time <br> to code</p>
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="col-4">
+												<h2 class="t1">
+													<b>El Ingeniero en Sistemas</b>
+												</h2>
+											</div>
+
+											<div class="col-3 settings">
+												<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+								</div>
+								<img src="https://i.pinimg.com/564x/18/f7/a8/18f7a83f40c9fad584c0faf06c22ac1c.jpg" class="card-img" alt="...">
+								<div class="card-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-6">
+												<div class="row">
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-heart fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 likes</span>
+													</div>
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-comment fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 comments</span>
+													</div>
+													<div class="col-1">
+														<i class="fa-regular fa-paper-plane fa-2xl" style="color: #000000"></i>
+													</div>
+												</div>
+											</div>
+											<div class="col favorite">
+												<i class="fa-regular fa-bookmark fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+
+									</div>
+								  <p class="card-text">                Se enfoca en el diseño complejos que involucran 
+									hardware, software y procesos, la implementación y 
+									mantenimiento de sistemas informáticos. trabajan 
+									para desarrollar soluciones tecnológicas que 
+									satisfagan las necesidades de los usuarios y 
+									las empresas.</p>
+								  <span class="text-secondary text-link">204 comments...</span>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+										<div class="row row-card-header">
+											<div class="col-4">
+												<div class="row row-card">
+													<div class="col column-card">
+														<i class="fa-solid fa-robot fa-2xl" style="color: #000000;"></i>
+														<p>To believe is <br> to create</p>
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="col-4">
+												<h2 class="t1">
+													<b>El Ingeniero en Mecatronica</b>
+												</h2>
+											</div>
+
+											<div class="col-3 settings">
+												<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+								</div>
+								<img src="https://i.pinimg.com/564x/72/80/74/72807442ec6a9d285c8e6c42be7682f6.jpg" class="card-img" alt="...">
+								<div class="card-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-6">
+												<div class="row">
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-heart fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 likes</span>
+													</div>
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-comment fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 comments</span>
+													</div>
+													<div class="col-1">
+														<i class="fa-regular fa-paper-plane fa-2xl" style="color: #000000"></i>
+													</div>
+												</div>
+											</div>
+											<div class="col favorite">
+												<i class="fa-regular fa-bookmark fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+
+									</div>
+								  <p class="card-text">                               Los ingenieros mecatrónicos trabajan en el diseño 
+									de robots, sistemas de automatización y dispositivos 
+								Para mejorar la calidad de Vida de las personas. 
+								Sus Areas del conocimento son la Computacion, la 
+								Electronica, Sistemas de Control y mecanica.</p>
+								  <span class="text-secondary text-link">204 comments...</span>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+										<div class="row row-card-header">
+											<div class="col-4">
+												<div class="row row-card">
+													<div class="col column-card">
+														<i class="fa-solid fa-shuttle-space fa-rotate-270 fa-2xl" style="color: #000000;"></i>
+														<p>To infinity <br> and beyond</p>
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="col-4">
+												<h2 class="t1">
+													<b>El Ingeniero en Aeronautica</b>
+												</h2>
+											</div>
+
+											<div class="col-3 settings">
+												<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+								</div>
+								<img src="https://i.pinimg.com/236x/65/e9/3b/65e93bd64db2d97b650b439eae86f93d.jpg" class="card-img" alt="...">
+								<div class="card-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-6">
+												<div class="row">
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-heart fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 likes</span>
+													</div>
+													<div class="col-3" style="display: contents;">
+														<i class="fa-regular fa-comment fa-2xl" style="color: #000000"></i>
+														<span style="padding: 4px;">204 comments</span>
+													</div>
+													<div class="col-1">
+														<i class="fa-regular fa-paper-plane fa-2xl" style="color: #000000"></i>
+													</div>
+												</div>
+											</div>
+											<div class="col favorite">
+												<i class="fa-regular fa-bookmark fa-2xl" style="color: #000000"></i>
+											</div>
+										</div>
+
+									</div>
+								  <p class="card-text">                               
+									Los ingenieros aeronáuticos trabajan
+									en áreas como aerodinámica, estructuras 
+									de aviones y sistemas de propulsión. Ademas,
+									Pueden Especializarce en la diseño, Fabricacion,
+									y Tecnologias Aeroespaciales</p>
+								  <span class="text-secondary text-link">204 comments...</span>
+								</div>
+							</div>
+
+						</article>
+					</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<arcticle>
+							<div class="container" style="margin: 0;">
+								<div class="row row-cols-3 row-profile">
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/18/f7/a8/18f7a83f40c9fad584c0faf06c22ac1c.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/72/80/74/72807442ec6a9d285c8e6c42be7682f6.jpg" alt="">
+										</div>											
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/236x/65/e9/3b/65e93bd64db2d97b650b439eae86f93d.jpg" alt="">
+										</div>	
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/dc/a2/bb/dca2bbb2c2d06acbd4225fe4d9027b5d.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/31/85/94/3185944905228736aff60abda53d8405.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/09/d6/ad/09d6ad158fb021faeb3b95391b71a03f.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/3c/d6/aa/3cd6aa922c9bbe12cb6b4e15613f93c0.jpg" alt="">
+										</div>
+									</div>
+							
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/a9/c4/00/a9c4004023509ab13b17f7ba539832ff.jpg" alt="">
+										</div>
+									</div>
+
+									<div class="col-4 col-img">
+										<div class="img-profile-view">
+											<img src="https://i.pinimg.com/564x/b5/95/e5/b595e503a0d6bdc50fe89ac05d162e87.jpg" alt="">
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</arcticle>
+					</div>
+				  </div>
+
+			
+			</section>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>
